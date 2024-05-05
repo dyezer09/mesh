@@ -313,3 +313,16 @@ h6,
     background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
 }
+.call_button{
+    color: white;
+    border-radius: 10px; 
+    background-color: #2B2825;
+}
+
+.modal-window{
+  max-width: none;
+  position: fixed;
+  top: 20%;
+  margin-top: 90px;
+  display:none;
+}

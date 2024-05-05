@@ -93,3 +93,21 @@
     
 })(jQuery);
 
+const buttonId =  document.getElementById("call");
+
+let onOff = 0;
+
+buttonId.addEventListener("click", () => {
+    if(onOff == 0){
+        modal_window.style.display = "block";
+        modal_window.style.zIndex = "9999";
+      onOff = 1;
+    }else{
+        modal_window.style.display = "none";
+      onOff = 0;
+    }
+
+    
+  });
+
+
