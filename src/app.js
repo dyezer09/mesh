@@ -40,7 +40,11 @@ app.engine('.hbs', engine({
 	//res.render("pages/index", { layout: "main"});
   res.render("pages/empty", { layout: "origin"});
   });
-
+  app.get("/c", (req, res) => {
+	
+    //res.render("pages/index", { layout: "main"});
+    res.render("pages/empty", { layout: "contact"});
+    });
 
 
 
