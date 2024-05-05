@@ -28,7 +28,7 @@ app.engine('.hbs', engine({
   }));
   app.set('view engine', 'hbs');
   app.set('views', path.resolve(__dirname, './views'));
-  app.use(express.static(path.join(__dirname, "../")))
+  app.use(express.static(path.join(__dirname, "")))
 
 
 
@@ -37,7 +37,8 @@ app.engine('.hbs', engine({
 
   app.get("/", (req, res) => {
 	
-	res.render("pages/index", { layout: "main"});
+	//res.render("pages/index", { layout: "main"});
+  res.render("pages/empty", { layout: "origin"});
   });
 
 
