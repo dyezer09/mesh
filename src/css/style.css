@@ -322,7 +322,14 @@ h6,
 .modal-window{
   max-width: none;
   position: fixed;
-  top: 20%;
+  top: 10%;
   margin-top: 90px;
   display:none;
+}
+.close{
+    color: white;
+    background-color: #2B2825;
+    margin-left: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

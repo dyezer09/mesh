@@ -95,19 +95,43 @@
 
 const buttonId =  document.getElementById("call");
 
-let onOff = 0;
-
 buttonId.addEventListener("click", () => {
-    if(onOff == 0){
         modal_window.style.display = "block";
         modal_window.style.zIndex = "9999";
-      onOff = 1;
-    }else{
-        modal_window.style.display = "none";
-      onOff = 0;
-    }
-
     
+});
+
+const button1Id =  document.getElementById("call1");
+
+button1Id.addEventListener("click", () => {
+        modal_window.style.display = "block";
+        modal_window.style.zIndex = "9999";
+    
+  });
+
+  const button2Id =  document.getElementById("call2");
+
+  button2Id.addEventListener("click", () => {
+          modal_window.style.display = "block";
+          modal_window.style.zIndex = "9999";
+      
+    });
+
+
+    const button3Id =  document.getElementById("call3");
+
+    button3Id.addEventListener("click", () => {
+            modal_window.style.display = "block";
+            modal_window.style.zIndex = "9999";
+        
+      });
+
+
+
+
+  const closeId =  document.getElementById("close");
+  closeId.addEventListener("click", () => {
+        modal_window.style.display = "none";
   });
 
 

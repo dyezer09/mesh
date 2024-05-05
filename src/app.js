@@ -32,20 +32,105 @@ app.engine('.hbs', engine({
 
 
 
-
-
-
+  let tab1 = [
+    {
+      name: 'ШТУКАТУРКА НАРУЖНЫХ СТЕН',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА КИРПИЧНЫХ СТЕН',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА СТЕН',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА СТЕН',
+      cost: '9'
+    },
+  ];
+  let tab2 = [
+    {
+      name: 'ШТУКАТУРКА ПОТОЛКА',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА ПОТОЛКА',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА ПОТОЛКА',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА ПОТОЛКА',
+      cost: '9'
+    },
+  ];
+  let tab3 = [
+    {
+      name: 'ШТУКАТУРКА ОТКОСОВ',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА ОТКОСОВ',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА ОТКОСОВ',
+      cost: '9'
+    },
+    {
+      name: 'ШТУКАТУРКА ОТКОСОВ',
+      cost: '9'
+    },
+  ];
+  
+  
+  let navbar = [
+    {
+      link: 'index',
+      text: 'Главная'
+    },
+    {
+      link: 'about',
+      text: 'О нас'
+    },
+    {
+      link: '/xz',
+      text: 'Штукатурные работы'
+    },
+    {
+      link: 'team',
+      text: 'Материалы'
+    },
+    {
+      link: 'about',
+      text: 'Стоимость'
+    },
+    {
+      link: 'contact',
+      text: 'Контакты'
+    },
+  ];
+  
+  
+  
   app.get("/", (req, res) => {
-	
-	//res.render("pages/index", { layout: "main"});
-  res.render("pages/empty", { layout: "origin"});
+  
+    //res.render("pages/index", { layout: "main"});
+    res.render("pages/empty", { layout: "origin", tab1, tab2, tab3, navbar});
   });
   app.get("/c", (req, res) => {
-	
+  
     //res.render("pages/index", { layout: "main"});
-    res.render("pages/empty", { layout: "contact"});
-    });
-
+    res.render("pages/empty", { layout: "contact" });
+  });
+  
+  
+  
+  
 
 
 
