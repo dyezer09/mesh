@@ -112,11 +112,39 @@ let names3 = [
 ];
 
 
+let navbar = [
+  {
+    link: 'index',
+    text: 'Главная'
+  },
+  {
+    link: 'about',
+    text: 'О нас'
+  },
+  {
+    link: '/xz',
+    text: 'Штукатурные работы'
+  },
+  {
+    link: 'team',
+    text: 'Материалы'
+  },
+  {
+    link: 'about',
+    text: 'Стоимость'
+  },
+  {
+    link: 'contact',
+    text: 'Контакты'
+  },
+];
+
+
 
 app.get("/", (req, res) => {
 
   //res.render("pages/index", { layout: "main"});
-  res.render("pages/empty", { layout: "origin", names1, names2, names3 });
+  res.render("pages/empty", { layout: "origin", names1, names2, names3, navbar});
 });
 app.get("/c", (req, res) => {
 
