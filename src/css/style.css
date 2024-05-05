@@ -320,8 +320,9 @@ h6,
 }
 
 .modal-window{
-  max-width: 700px;
+  max-width: none;
   position: fixed;
   top: 20%;
-  left: 35%;
+  margin-top: 90px;
+  display:none;
 }
