@@ -109,5 +109,8 @@ buttonId.addEventListener("click", () => {
 
     
   });
-
+  const closeId =  document.getElementById("close");
+  closeId.addEventListener("click", () => {
+        modal_window.style.display = "none";
+  });
 
