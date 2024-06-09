@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { engine } from "express-handlebars";
 import { Telegraf } from "telegraf";
-const bot = new Telegraf("7115209090:AAFyyzUbvXln5CQD6GG_jMaIWD9nx57xBb8");
+const bot = new Telegraf("1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg")
 import { message } from "telegraf/filters";
 import bodyParser from "body-parser";
 
@@ -42,31 +42,31 @@ app.use(express.static(path.join(__dirname, "")));
 let tab1 = [
   {
     name: "ШТУКАТУРКА НАРУЖНЫХ СТЕН",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА ВНУТРЕННИХ СТЕН",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА КИРПИЧНЫХ СТЕН",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА СТЕН ПО МАЯКАМ",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА СТЕН ИЗ ГАЗОБЕТОНА",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ЦЕМЕНТНАЯ ШТУКАТУРКА СТЕН",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ГИПСОВАЯ ШТУКАТУРКА СТЕН",
-    cost: "9",
+    cost: "цена договорная",
   },
   // {
   //   name: "",
@@ -81,43 +81,43 @@ let tab1 = [
 let tab2 = [
   {
     name: "ШТУКАТУРКА ПОТОЛКА",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА ПОТОЛКА",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА ПОТОЛКА",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА ПОТОЛКА",
-    cost: "9",
+    cost: "цена договорная",
   },
 ];
 let tab3 = [
   {
     name: "ШТУКАТУРКА ОТКОСОВ",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА ФАСАДОВ",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА ЛЕСТНИЦ",
-    cost: "9",
+    cost: "цена договорная",
   },
   {
     name: "ШТУКАТУРКА КВАРТИР",
-    cost: "9",
+    cost: "цена договорная",
   },
 ];
 
 let navbar = [
   {
-    link: "index",
+    link: "#topbar",
     text: "Главная",
   },
   // {
@@ -133,11 +133,11 @@ let navbar = [
   //   text: "Материалы",
   // },
   {
-    link: "about",
+    link: "#cost",
     text: "Стоимость",
   },
   {
-    link: "contact",
+    link: "#footer",
     text: "Контакты",
   },
 ];

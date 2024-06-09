@@ -333,7 +333,11 @@ h6,
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.formhead{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
 /* .about ul{
     margin-top: -20px;
 }
