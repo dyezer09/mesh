@@ -15,13 +15,13 @@
                                 ЗАПОЛНИТЕ ФОРМУ И МЫ ВАМ ПЕРЕЗВОНИМ  
                              </div>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="ФИО" style="height: 55px;" name  = "name" pattern ="^[A-Za-zА-Яа-яЁё0-9\s]+$" required>
+                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="ваше имя" style="height: 55px;" name  = "name" pattern ="^[A-Za-zА-Яа-яЁё0-9\s]+$" required minlength="2" maxlength="30">
                             </div>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="НОМЕР" style="height: 55px;" name  = "number" pattern="[0-9]{6,}" required>
+                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="+375-xx-xxx-xx-xx" style="height: 55px;" name  = "number"  required minlength="6" maxlength="19">
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="СООБЩЕНИЕ" name  = "message" pattern ="^[A-Za-zА-Яа-яЁё0-9\s]+$" required>
+                                <input type="text" class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="сообщение" name  = "message" pattern ="^[A-Za-zА-Яа-яЁё0-9\s]+$" maxlength="200">
                             </div>
                             <div class="col-sm-12">
                                 <button class="btn btn-primary border-inner w-100 py-3" type="submit" style="margin-bottom: 60px;">Заказать звонок</button>
