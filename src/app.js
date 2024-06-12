@@ -3,12 +3,12 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { engine } from "express-handlebars";
 import { Telegraf } from "telegraf";
-const bot = new Telegraf("7115209090:AAFyyzUbvXln5CQD6GG_jMaIWD9nx57xBb8")
+const bot = new Telegraf("1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg")
 //1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg
 import { message } from "telegraf/filters";
 import bodyParser from "body-parser";
 
-let chatid = 1665693163;
+let chatid = -362706894;
 //  link to bot t.me/dfi2024bot.
 
 //console.log("132")
