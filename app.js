@@ -4,16 +4,13 @@ import { fileURLToPath } from "url";
 import { engine } from "express-handlebars";
 import { Telegraf } from "telegraf";
 const bot = new Telegraf("1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg")
-//1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg
 import { message } from "telegraf/filters";
 import bodyParser from "body-parser";
 
 let chatid = -362706894;
-//  link to bot t.me/dfi2024bot.
-
 //console.log("132")
 
-const port = 5500;
+const port = 9020;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -35,7 +32,7 @@ app.engine(
 );
 app.set("view engine", "hbs");
 app.set("views", path.resolve(__dirname, "./views"));
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(__dirname, "")));
 
 let tab1 = [
   {
@@ -138,9 +135,15 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  let mess = "перезвоните клиенту по штукатурке:" + req.body.name + ' ' + req.body.number + ' ' + req.body.message;
-  console.log(chatid);
-  bot.telegram.sendMessage(chatid, mess);
+  let mess1 = req.body.name;
+  let mess2 = req.body.number;
+  let mess3 = req.body.message;
+  console.log("s" + mess1 + "s");
+  console.log(mess2);
+  console.log(mess3);
+  bot.telegram.sendMessage(chatid, mess1);
+  bot.telegram.sendMessage(chatid, mess2);
+  bot.telegram.sendMessage(chatid, mess3);
 
   res.render("pages/empty", { layout: "origin" });
 });
