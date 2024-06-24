@@ -32,11 +32,8 @@ app.engine(
 );
 app.set("view engine", "hbs");
 app.set("views", path.resolve(__dirname, "./views"));
-<<<<<<< HEAD
-app.use(express.static(path.join(__dirname, "dist")));
-=======
 app.use(express.static(path.join(__dirname, "../dist")));
->>>>>>> b43032c22f7891ac8c6da5c5a25e10c9cf8db9dc
+
 
 let tab1 = [
   {
