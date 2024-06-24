@@ -4,16 +4,13 @@ import { fileURLToPath } from "url";
 import { engine } from "express-handlebars";
 import { Telegraf } from "telegraf";
 const bot = new Telegraf("1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg")
-//1605900850:AAEY-QNR_SbGFVX4s0l780GlnXKt85DGeEg
 import { message } from "telegraf/filters";
 import bodyParser from "body-parser";
 
 let chatid = -362706894;
-//  link to bot t.me/dfi2024bot.
-
 //console.log("132")
 
-const port = 5500;
+const port = 9020;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -35,7 +32,11 @@ app.engine(
 );
 app.set("view engine", "hbs");
 app.set("views", path.resolve(__dirname, "./views"));
+<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, "dist")));
+=======
+app.use(express.static(path.join(__dirname, "../dist")));
+>>>>>>> b43032c22f7891ac8c6da5c5a25e10c9cf8db9dc
 
 let tab1 = [
   {
